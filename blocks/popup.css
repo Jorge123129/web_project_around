@@ -93,3 +93,43 @@
 .popup__line{
     width: 360px;
 }
+
+
+@media screen and (max-width: 430px) {
+    .popup {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+    .popup__container {
+        border-radius: 5px;
+        width: 100%;
+        max-width: 280px;
+        height: 320px;
+        
+    }
+    .popup__content {
+        top: 0;
+        right: 0;
+    }
+    .popup__form {
+        gap: 10px;
+    }
+    .popup__input {
+        width: 100%;
+    }
+    .popup__button {
+        width: 100%;
+    }
+    .popup__heading {
+        font-size: 20px;
+    }
+    .popup__close-button-cross {
+        position: absolute;
+        top: -50px;
+        right: 10px;
+    }
+    
+}
