@@ -41,6 +41,8 @@
     opacity: 1;
     cursor: pointer;
     transition: opacity 0.3s;
+    border: 1px solid white;
+
 }
 
 .profile__edit-button:hover {

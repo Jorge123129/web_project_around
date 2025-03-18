@@ -17,6 +17,7 @@
 .popup--show {
     opacity: 1;
     pointer-events: unset;
+    display: flex;
 }
 
 .popup__container {
@@ -33,6 +34,9 @@
 .popup__content {
     display: flex;
     justify-content: flex-end; /* Alinear a la derecha */
+    position: absolute;
+    top: -25px;
+    right: -25px
 }
 
 .popup__close-button {

@@ -5,11 +5,11 @@ const closePopup = document.querySelector('.popup__close-button');
 
 openModal.addEventListener('click', (e) => {
     e.preventDefault();
-    modal.classList.add('popup--show');
+    popup.classList.add('popup--show');
 });
 
 closePopup.addEventListener('click', (e) => {
     e.preventDefault();
-    modal.classList.remove('popup--show');
+    popup.classList.remove('popup--show');
 });
 
