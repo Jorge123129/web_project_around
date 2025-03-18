@@ -1,0 +1,91 @@
+/* Estilos base del modal */
+.popup {
+    margin: 0 auto;
+    max-width: 430px;
+    height: 330px;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "inter", sans-serif;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.popup--show {
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.popup__container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 430px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Botón de cierre en la esquina superior derecha */
+.popup__content {
+    display: flex;
+    justify-content: flex-end; /* Alinear a la derecha */
+}
+
+.popup__close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.popup__close-button-cross {
+    width: 24px;
+    height: 24px;
+}
+
+/* Formulario */
+.popup__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre elementos */
+    height: auto;
+}
+
+.popup__heading {
+    font-size: 24px;
+    color: #000000;
+    margin: 0;
+    text-align: left; /* Alinear a la izquierda */
+    font-weight: 900;
+}
+
+.popup__input {
+    height: 50px;
+    width: 360px;
+    border: none;
+    
+}
+
+.popup__button {
+    width: 360px;
+    padding: 10px;
+    background-color:transparent;
+    color:#C4C4C4;
+    border: solid #C4C4C4 1px;
+    border-radius: 2px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.popup__button:hover {
+    opacity: 0.5;
+}
+.popup__line{
+    width: 360px;
+}

@@ -1,0 +1,31 @@
+/* Estilos base para el header */
+.header {
+    margin-top: 45px;
+}
+
+.header__png {
+    padding-bottom: 41px;
+}
+
+/* Media Queries para tabletas (entre 425px y 1024px) */
+@media screen and (min-width: 425px) and (max-width: 1024px) {
+    .header__png {
+        height: 24px;
+        width: 126px;
+    }
+
+    .header__line {
+        width: 100%;
+    }
+}
+
+/* Media Queries para móviles (hasta 425px) */
+@media screen and (max-width: 425px) {
+    .header__png {
+        margin: 30px;
+    }
+
+    .header__line {
+        width: 100%;
+    }
+}
