@@ -135,8 +135,9 @@
     .profile__button {
         margin-top: 20px;
         width: 100%;
-        max-width: 415px;
+        max-width: 280px;
         height: 50px;
+        margin: 10px;
     }
 
     .profile__name {
