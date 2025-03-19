@@ -41,7 +41,13 @@
     opacity: 1;
     cursor: pointer;
     transition: opacity 0.3s;
-    
+    border: solid 1px white;
+    padding-left: 5px;
+}
+
+.ancho{
+    width: 10px;
+    height: 10px;
 }
 
 .profile__edit-button:hover {
@@ -102,7 +108,7 @@
     }
 
     .profile__edit-button {
-        margin-left: 10px;
+        margin-left: 20px;
     }
 
     .profile__button {
