@@ -1,7 +1,7 @@
 .elements {
     max-width: 880px;
     width: 100%;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .elements__img {
@@ -15,9 +15,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f0f0f0;
-    border-radius: 10px; 
-    overflow: hidden; 
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .elements__img-yosemite,
@@ -26,47 +26,81 @@
 .elements__img-latemar,
 .elements__img-vanois,
 .elements__img-braies {
-    width: 100%; 
-    height: auto; 
-    display: block; 
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.elements__text-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px 20px; 
+    box-sizing: border-box; 
+    height: 80px;
+    max-width: 280px;
 }
 
 .elements__text {
-    width: 100%; 
-    padding: 30px; 
-    text-align: center; 
-    color: black; 
-    background-color: white; 
-    font-family: "Inter", sans-serif; 
-    font-size: 24px; 
-    font-weight: 900; 
-    margin: 0; 
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    color: black;
+    margin: 0;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    max-width: 100%; 
 }
-.png:hover{
+
+.png {
+    width: 21px; 
+    height: 20px;
     cursor: pointer;
-    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.png:hover {
+    opacity: 0.5; 
 }
 
 @media screen and (max-width: 425px) {
     .elements__img {
-        grid-template-columns: repeat(1, 1fr); 
+        grid-template-columns: repeat(1, 1fr);
         margin: 10px;
     }
 
+    .elements__text {
+        font-size: 18px; 
+        max-width: 70%; 
+    }
+
+    .png {
+        width: 21px; 
+        height: 20px;
+    }
 }
 
 @media screen and (min-width: 425px) and (max-width: 1024px) {
     .elements__img {
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 1fr);
         margin: 10px;
     }
-    
+
+    .elements__text {
+        font-size: 20px; 
+        max-width: 75%; 
+    }
+
+    .png {
+        width: 22px; 
+        height: 22px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
     .elements__img {
-        grid-template-columns: repeat(3, 1fr); 
         margin: 10px;
     }
-    
-}
+ }
