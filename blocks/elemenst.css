@@ -42,7 +42,7 @@
     font-weight: 900; 
     margin: 0; 
 }
-.element__like:hover{
+.png:hover{
     cursor: pointer;
     opacity: 0.5;
 }
