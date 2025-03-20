@@ -4,6 +4,7 @@ const closePopup   = document.querySelector('.popup__close-button');
 const guardarPopup = document.querySelector('.popup__form');
 const overlay      = document.querySelector('.overlay');
 
+
 openModal.addEventListener('click', (e) => {
     e.preventDefault();
     popup.classList.add('popup--show');
@@ -27,3 +28,15 @@ overlay.addEventListener('click', (e) => {
     overlay.classList.remove('overlay--show');
 });
 
+
+function likeButton(){
+    const likeButton = event.currentTarget;
+
+        if(likeButton.style.backgroundImage === 'url("../images/like-black.svg")'){
+            likeButton.style.backgroundImage = 'url("../images/like.svg")';
+
+        }else{
+            likeButton.style.backgroundImage = 'url("../images/like-black.svg")';
+        }
+
+}
