@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <div id="overlay" class="overlay" onclick="off()"></div>
     <div class="page">
         <header class="header">
             <img src="/images/header.png" alt="aqui deberia estar una imagen" class="header__png">
@@ -45,7 +46,7 @@
                         <img src="/images/yosemite.png" alt="Yosemite" class="elements__img-yosemite">
                         <div class="elements__text-container">
                             <p class="elements__text">Yosemite</p>
-                            <img class="png" src="/images/Vector.png" alt="Corazón">
+                            <img class="png like-button" data-liked="false" src="/images/Vector.png" alt="Corazón">
                         </div>
                     </div>
             
@@ -95,7 +96,9 @@
                     </div>
                 </div>
             </section>
-            <section class="popup ">
+
+        <div id="overlay" onclick="off()"></div>
+            <section class="popup">
                 <div class="popup__container">
                     <!-- Botón de cierre en la esquina superior derecha -->
                     <div class="popup__content">

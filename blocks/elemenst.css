@@ -59,10 +59,10 @@
     height: 20px;
     cursor: pointer;
     transition: opacity 0.3s;
+    background: url(../images/like.svg) no-repeat;
 }
-
-.png:hover {
-    opacity: 0.5; 
+.png:active{
+    background: url(../images/like-black.svg);
 }
 
 @media screen and (max-width: 425px) {
