@@ -19,4 +19,4 @@ Manipulación del DOM para actualizar la lista de tarjetas en tiempo real.
 
 Autor
 
-https://github.com/Jorge123129
+https://jorge123129.github.io/web_project_around/
